@@ -1,3 +1,59 @@
+/*  ======= RESET CSS START ======= */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+}
+
+/*  ======= RESET CSS END ======= */
+
+/*  ======= CREATE REACT APP CSS START ======= */
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -11,3 +67,367 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/*  ======= CREATE REACT APP CSS END ======= */
+
+/* ======= GOOGLE FONT CDN START ======= */
+.poppins-thin {
+  font-family: "Poppins", serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+/* ======= GOOGLE FONT CDN END ======= */
+
+/* GLOBAL FONT STYLES */
+h1 {
+  font-family: "Poppins", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+h2 {
+  font-family: "Poppins", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+h3, h4, h5, h6 {
+  font-family: "Poppins", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+p, a, span {
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*  ======= NAVIGATION STYLES START ======= */
+
+/* Navbar Wrapper Styles */
+.navbar-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 60px;
+
+}
+/* Navbar Links Styles */
+.navbar-links {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 25px;
+}
+.navbar-links div a {
+  color: #1181C8;
+  font-weight: 700;
+}
+.navbar-links div a:hover {
+  color: #FE3738;
+  font-weight: 700;
+}
+
+/* ======= NAVIGATION STYLES END ======= */
+.hero-section {
+  background-image: url("/public/Images/Assets/hero-background.jpg") ;
+  background-attachment: fixed; /* Keeps image fixed while scrolling */
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero-section h6 {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 40px 0 20px  0;
+}
+.hero-section h1 {
+  width: 700px;
+  margin: auto;
+  padding: 0 0 40px;
+  color: #ffffff;
+  font-size: 65px;
+  font-weight: 800;
+}
+.text-underline {
+  text-decoration: underline;
+  text-decoration-thickness: 15px;
+  text-decoration-color: #FE3738;
+  text-underline-offset: 1px;
+}
+.hero-section button {
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/* ======= HERO STYLES END ======= */
+
+/* ======= BIO STYLES START ======= */
+.bio-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 50px;
+}
+.bio-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bio-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-right;
+}
+.bio-right img {
+  border-radius: 13px;
+}
+.bio-heading h2 {
+  line-height: 78px;
+  font-size: 60px;
+  font-weight: 500;
+  background: linear-gradient(to right, #1181C8, #FE3738); /* Left to Right */
+  -webkit-background-clip: text; /* Clip background to text */
+  -webkit-text-fill-color: transparent; /* Hide default text color */
+}
+.bio-description p {
+  text-align: left;
+  padding-right: 50px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.bio-section button {
+  margin-top: 15px;
+  padding: 10px 25px;
+  border-radius: 15px;
+  background-color:#1181C8 ;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: bold;
+}
+/* ======= BIO STYLES END ======= */
+
+/* ======= MINISTRIES STYLES START ======= */
+.ministries-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1181C8;
+  padding: 60px 0;
+}
+.top-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+  color: #ffffff;
+}
+.top-row h2 {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 44px;
+}
+.bottom-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 60px 40px 0;
+  color: #ffffff;
+}
+.bottom-row img {
+  width: 90%;
+  border-radius: 13px;
+}
+.bottom-row h6 {
+  text-align: left;
+  padding: 20px 20px;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 27px;
+}
+/* ======= MINISTRIES STYLES END ======= */
+
+/* ======= CALL STYLES START ======= */
+
+.call-section {
+  display: flex;
+  justify-content: center; /* Centers columns horizontally */
+  align-items: start; /* Centers content vertically */
+  padding: 100px 0;
+  margin: 100px 50px 0 50px;
+  background-color: #ff0000;
+  border-radius: 6px 80px 6px 6px;
+}
+
+.left-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start !important; 
+  align-items: start;
+  color: #ffffff;
+}
+.left-column h6 {
+    border: 0.5px solid white; /* Thin white border */
+    border-radius: 13px;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+    align-items: left;
+}  
+.left-column h2 {
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 44px;
+  letter-spacing: -0.03em;
+  text-align: left;
+  padding: 30px 0;
+}
+.contact-numbers {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 25px;
+}
+.contact-numbers span {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 13px;
+}
+.contact-numbers-left {
+  color: #1181C8 !important;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+.contact-numbers-right {
+  color: #1181C8 !important;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.right-column {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.bible-verse img {
+  padding: 20px 0;
+}
+.bible-verse p {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+/* ======= CALL STYLES END ======= */
+
+/* ======= DOVE STYLES START ======= */
+.dove-image {
+  height: 50px;
+}
+.dove-image img {
+width: 500px;
+height: 500px;
+transform: translateX(-80%) translateY(-20%);
+}
+
+/* ======= DOVE STYLES END ======= */
+
+/* ======= FOOTER STYLES START ======= */
+
+.footer-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #1181C8;
+  margin: 0 50px;
+  padding: 60px 30px;
+  border-radius: 6px 6px 60px 6px;
+}
+.footer-text h2 {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #ffffff;
+  transform: translateX(110%) translateY(20%);
+}
+.footer-button button {
+  margin-right: 10px;
+  padding: 20px 40px;
+  background-color: #ff0000;
+  color: #ffffff;
+  transform: translateX(-50%) translateY(0%);
+  border-radius: 500px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+}
+
+
+/* ======= FOOTER STYLES END ======= */
